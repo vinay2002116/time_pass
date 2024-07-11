@@ -6,7 +6,7 @@
   <body>
     <div class="container">
       <div>
-        <h1 class="header_text">Yeeyy ! Finally</h1>
+        <h1 class="header_text">Yeeyy! Finally</h1>
       </div>
       <div class="gif_container">
         <img
@@ -17,6 +17,15 @@
       <button class="btn" id="yesButton" onclick="nextPage()">
         Let's Fix a Date
       </button>
+      <script>
+        function nextPage() {
+          const phoneNumber = "9392167987";
+          const message = "Hehe helu";
+          const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+          window.location.href = whatsappUrl;
+        }
+      </script>
     </div>
   </body>
 </html>
+
